@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, lazy, Suspense } from "react";
 import { MadrasahProvider } from "./context/MadrasahContext";
 import { Navbar } from "./components/Navbar";
 import { HeroSection } from "./components/HeroSection";
@@ -7,7 +7,10 @@ import { ClassesAndTeachers } from "./components/ClassesAndTeachers";
 import { PpdbSection } from "./components/PpdbSection";
 import { NewsAndGallery } from "./components/NewsAndGallery";
 import { ContactFaqFooter } from "./components/ContactFaqFooter";
-import { AdminPanel } from "./components/AdminPanel";
+
+const AdminPanel = lazy(() =>
+  import("./components/AdminPanel").then((m) => ({ default: m.AdminPanel }))
+);
 
 export default function App() {
   const [isAdminOpen, setIsAdminOpen] = useState(false);
@@ -39,7 +42,11 @@ export default function App() {
         </main>
 
         {/* MENU ADMIN (Edit, Tambah, Hapus Konten & Kelola PPDB) */}
-        <AdminPanel isOpen={isAdminOpen} onClose={() => setIsAdminOpen(false)} />
+        {isAdminOpen && (
+          <Suspense fallback={null}>
+            <AdminPanel isOpen={isAdminOpen} onClose={() => setIsAdminOpen(false)} />
+          </Suspense>
+        )}
       </div>
     </MadrasahProvider>
   );
