@@ -17,18 +17,40 @@
   }
 }
 
-/* Subtle 8-pointed Islamic geometric ornament background */
+/* Subtle 8-pointed Islamic geometric + fresh botanical leaf & dewdrop pattern on light green canvas */
 .islamic-pattern-bg {
-  background-color: #f4faf5;
+  background-color: #f3faf5;
   background-image:
-    radial-gradient(circle at 15% 10%, rgba(220, 252, 231, 0.75) 0%, transparent 45%),
-    radial-gradient(circle at 85% 30%, rgba(254, 252, 232, 0.9) 0%, transparent 50%),
-    url("data:image/svg+xml,%3Csvg width='72' height='72' viewBox='0 0 72 72' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%2314532d' stroke-opacity='0.045' stroke-width='1'%3E%3Cpolygon points='36,4 45,27 68,36 45,45 36,68 27,45 4,36 27,27'/%3E%3Crect x='14' y='14' width='44' height='44'/%3E%3Crect x='14' y='14' width='44' height='44' transform='rotate(45 36 36)'/%3E%3C/g%3E%3C/svg%3E");
+    radial-gradient(circle at 12% 8%, rgba(187, 247, 208, 0.55) 0%, transparent 42%),
+    radial-gradient(circle at 88% 28%, rgba(254, 252, 232, 0.85) 0%, transparent 48%),
+    radial-gradient(circle at 50% 75%, rgba(220, 252, 231, 0.6) 0%, transparent 50%),
+    url("data:image/svg+xml,%3Csvg width='96' height='96' viewBox='0 0 96 96' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%2314532d' stroke-opacity='0.045' stroke-width='1'%3E%3Cpolygon points='48,6 59,37 90,48 59,59 48,90 37,59 6,48 37,37'/%3E%3Cpath d='M18 22 C24 14, 32 14, 34 22 C28 28, 22 28, 18 22 Z'/%3E%3Cpath d='M78 74 C72 66, 64 66, 62 74 C68 80, 74 80, 78 74 Z'/%3E%3Ccircle cx='28' cy='20' r='1.6' fill='%2315803d' fill-opacity='0.08' stroke='none'/%3E%3Ccircle cx='70' cy='72' r='1.6' fill='%2315803d' fill-opacity='0.08' stroke='none'/%3E%3C/g%3E%3C/svg%3E");
 }
 
-/* Subtle dark geometric ornament for green hero/footer/vision containers */
+/* Light green alternating section band with delicate leaf & morning dew texture */
+.leaf-dew-band {
+  position: relative;
+  background-color: #eaf7ee;
+  background-image:
+    linear-gradient(135deg, rgba(234, 247, 238, 0.92) 0%, rgba(220, 252, 231, 0.88) 50%, rgba(244, 250, 245, 0.93) 100%),
+    url("/src/assets/images/emerald_leaves_dew_1794959050820.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Subtle dark geometric + dew pattern for deep green hero/footer/vision containers */
 .islamic-pattern-dark {
-  background-image: url("data:image/svg+xml,%3Csvg width='72' height='72' viewBox='0 0 72 72' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='0.06' stroke-width='1'%3E%3Cpolygon points='36,4 45,27 68,36 45,45 36,68 27,45 4,36 27,27'/%3E%3Crect x='14' y='14' width='44' height='44'/%3E%3Crect x='14' y='14' width='44' height='44' transform='rotate(45 36 36)'/%3E%3C/g%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg width='84' height='84' viewBox='0 0 84 84' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='0.065' stroke-width='1'%3E%3Cpolygon points='42,6 52,32 78,42 52,52 42,78 32,52 6,42 32,32'/%3E%3Cpath d='M16 18 C21 12, 27 12, 29 18 C24 23, 19 23, 16 18 Z'/%3E%3Ccircle cx='24' cy='16' r='1.5' fill='%23ffffff' fill-opacity='0.12' stroke='none'/%3E%3Ccircle cx='66' cy='68' r='1.8' fill='%23ffffff' fill-opacity='0.1' stroke='none'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Rich emerald green surface layered with fresh leaves and morning dew image */
+.leaf-dew-emerald-surface {
+  background-color: #14532d;
+  background-image:
+    linear-gradient(130deg, rgba(20, 83, 45, 0.84) 0%, rgba(21, 128, 61, 0.78) 55%, rgba(15, 65, 35, 0.88) 100%),
+    url("/src/assets/images/emerald_leaves_dew_1794959050820.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 @media (prefers-reduced-motion: reduce) {

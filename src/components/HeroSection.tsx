@@ -13,7 +13,7 @@ export const HeroSection: React.FC = () => {
       id="beranda"
       className="relative overflow-hidden bg-[#14532d] text-white"
     >
-      {/* Background Foto Kampus dengan Overlay Hijau Tua */}
+      {/* Background Foto Kampus + Corak Daun & Embun dengan Overlay Hijau Tua */}
       <div className="absolute inset-0">
         <SmartImage
           src={images.campusHero}
@@ -21,10 +21,16 @@ export const HeroSection: React.FC = () => {
           className="w-full h-full object-cover opacity-20"
         />
         <div
+          className="absolute inset-0 opacity-30 bg-cover bg-center mix-blend-soft-light"
+          style={{
+            backgroundImage: 'url("/src/assets/images/emerald_leaves_dew_1794959050820.jpg")',
+          }}
+        />
+        <div
           className="absolute inset-0 islamic-pattern-dark"
           style={{
             background:
-              "linear-gradient(125deg, rgba(20, 83, 45, 0.96) 0%, rgba(21, 128, 61, 0.88) 55%, rgba(16, 65, 36, 0.95) 100%)",
+              "linear-gradient(125deg, rgba(20, 83, 45, 0.90) 0%, rgba(21, 128, 61, 0.80) 55%, rgba(16, 65, 36, 0.90) 100%)",
           }}
         />
       </div>

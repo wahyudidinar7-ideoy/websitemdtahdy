@@ -128,7 +128,7 @@ export const ClassesAndTeachers: React.FC = () => {
       </section>
 
       {/* <!-- SECTION GURU & TENAGA KEPENDIDIKAN --> */}
-      <section id="guru" className="py-16 lg:py-24 bg-[#eef8f0]/80 border-y border-emerald-900/10">
+      <section id="guru" className="py-16 lg:py-24 leaf-dew-band border-y border-emerald-900/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <p className="text-sm font-semibold text-[#15803d] tracking-wide">

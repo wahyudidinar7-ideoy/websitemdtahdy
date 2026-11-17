@@ -46,7 +46,7 @@ export const ContactFaqFooter: React.FC<ContactFaqFooterProps> = ({ onOpenAdmin 
       {/* <!-- SECTION KONTAK, LOKASI & FAQ --> */}
       <section
         id="kontak"
-        className="py-16 lg:py-24 bg-[#eef8f0]/80 border-t border-emerald-900/10"
+        className="py-16 lg:py-24 leaf-dew-band border-t border-emerald-900/10"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
@@ -189,8 +189,9 @@ export const ContactFaqFooter: React.FC<ContactFaqFooterProps> = ({ onOpenAdmin 
       </section>
 
       {/* <!-- FOOTER --> */}
-      <footer className="bg-[#14532d] islamic-pattern-dark text-white pt-14 pb-8">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <footer className="relative overflow-hidden leaf-dew-emerald-surface text-white pt-14 pb-8">
+        <div className="absolute inset-0 islamic-pattern-dark pointer-events-none" />
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 pb-10 border-b border-white/15">
             {/* Kolom 1: Tentang */}
             <div className="space-y-3">

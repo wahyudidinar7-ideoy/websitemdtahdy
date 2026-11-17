@@ -127,13 +127,14 @@ export const ProfileAndPrograms: React.FC = () => {
             </div>
           </div>
 
-          {/* Visi (1 Kotak Besar Hijau) & Misi */}
+          {/* Visi (1 Kotak Besar Hijau dengan Corak Daun & Embun) & Misi */}
           <div className="mt-8 grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-            <div className="lg:col-span-5 rounded-2xl bg-[#14532d] islamic-pattern-dark text-white p-7 sm:p-9 flex flex-col justify-center shadow-md">
-              <p className="text-xs font-bold uppercase tracking-widest text-amber-300">
+            <div className="lg:col-span-5 rounded-2xl leaf-dew-emerald-surface text-white p-7 sm:p-9 flex flex-col justify-center shadow-md relative overflow-hidden">
+              <div className="absolute inset-0 islamic-pattern-dark pointer-events-none" />
+              <p className="relative text-xs font-bold uppercase tracking-widest text-amber-300">
                 Visi Madrasah
               </p>
-              <blockquote className="font-display font-bold text-xl sm:text-2xl leading-snug mt-4 text-white">
+              <blockquote className="relative font-display font-bold text-xl sm:text-2xl leading-snug mt-4 text-white">
                 &ldquo;{profile.visi}&rdquo;
               </blockquote>
             </div>
@@ -179,7 +180,7 @@ export const ProfileAndPrograms: React.FC = () => {
       </section>
 
       {/* <!-- SECTION PROGRAM UNGGULAN --> */}
-      <section id="program" className="py-16 lg:py-24 bg-[#eef8f0]/80 border-y border-emerald-900/10">
+      <section id="program" className="py-16 lg:py-24 leaf-dew-band border-y border-emerald-900/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <p className="text-sm font-semibold text-[#15803d] tracking-wide">
